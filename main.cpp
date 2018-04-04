@@ -21,7 +21,7 @@ int main()
 
 
     /// Create window
-        sf::RenderWindow window(VIDEOMODE, "Udacity", STYLE, sf::ContextSettings(24, 0, 0, 4, 3));
+        sf::RenderWindow window(VIDEOMODE, "VoitureAutonome", STYLE, sf::ContextSettings(24, 0, 0, 4, 3));
 
     std::cout << window.getSize().x << "  " << window.getSize().y << std::endl;
 
@@ -38,6 +38,10 @@ int main()
 
     /// Main loop
         engine->start();
+
+        std::cout << std::endl;
+        std::cout << std::endl;
+        std::cout << "Appuyez sur F6 pour passer du mode manuel a automatique" << std::endl;
 
         while ( Input::isOpen() )
         {
