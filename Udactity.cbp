@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Udactity" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="Binaries/debug" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="Binaries" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wnon-virtual-dtor" />
+					<Add option="-Wshadow" />
+					<Add option="-Winit-self" />
+					<Add option="-Wredundant-decls" />
+					<Add option="-Wunreachable-code" />
+					<Add option="-Wmissing-declarations" />
+					<Add option="-Wmissing-include-dirs" />
+					<Add option="-pedantic" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-DDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-lsfml-audio-s-d" />
+					<Add option="-lopenal32" />
+					<Add option="-lflac" />
+					<Add option="-lvorbisenc" />
+					<Add option="-lvorbisfile" />
+					<Add option="-lvorbis" />
+					<Add option="-logg" />
+					<Add option="-lsfml-graphics-s-d" />
+					<Add option="-lfreetype" />
+					<Add option="-ljpeg" />
+					<Add option="-lsfml-window-s-d" />
+					<Add option="-lopengl32" />
+					<Add option="-lgdi32" />
+					<Add option="-lsfml-network-s-d" />
+					<Add option="-lws2_32" />
+					<Add option="-lsfml-system-s-d" />
+					<Add option="-lwinmm" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="Binaries/Udactity" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="Binaries" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O1" />
+					<Add option="-Wfatal-errors" />
+					<Add option="-Wextra" />
+				</Compiler>
+				<Linker>
+					<Add option="-lsfml-audio-s" />
+					<Add option="-lopenal32" />
+					<Add option="-lflac" />
+					<Add option="-lvorbisenc" />
+					<Add option="-lvorbisfile" />
+					<Add option="-lvorbis" />
+					<Add option="-logg" />
+					<Add option="-lsfml-graphics-s" />
+					<Add option="-lfreetype" />
+					<Add option="-ljpeg" />
+					<Add option="-lsfml-window-s" />
+					<Add option="-lopengl32" />
+					<Add option="-lgdi32" />
+					<Add option="-lsfml-network-s" />
+					<Add option="-lws2_32" />
+					<Add option="-lsfml-system-s" />
+					<Add option="-lwinmm" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add option="-DGLEW_STATIC" />
+			<Add option="-DSFML_STATIC" />
+			<Add option="-DUSE_OPENCL" />
+			<Add directory="MinGE" />
+			<Add directory="D:/Adrien/PROG/Libs/glm" />
+			<Add directory="D:/Adrien/PROG/Libs/SFML-2.4.2/include" />
+			<Add directory="dependencies/RNA/include" />
+			<Add directory="dependencies/Utility/include" />
+		</Compiler>
+		<Linker>
+			<Add library="C:/Windows/System32/OpenCL.dll" />
+			<Add library="dependencies/RNA/lib/libRNA.a" />
+			<Add library="dependencies/Utility/lib/libUtility.a" />
+			<Add directory="D:/Adrien/PROG/Libs/SFML-2.4.2/lib" />
+		</Linker>
+		<Unit filename="CameraScript.h" />
+		<Unit filename="Drive.h" />
+		<Unit filename="MinGE/Assets/Material.cpp" />
+		<Unit filename="MinGE/Assets/Material.h" />
+		<Unit filename="MinGE/Assets/Mesh.cpp" />
+		<Unit filename="MinGE/Assets/Mesh.h" />
+		<Unit filename="MinGE/Assets/PhysicMaterial.cpp" />
+		<Unit filename="MinGE/Assets/PhysicMaterial.h" />
+		<Unit filename="MinGE/Assets/Program.cpp" />
+		<Unit filename="MinGE/Assets/Program.h" />
+		<Unit filename="MinGE/Assets/RenderTexture.cpp" />
+		<Unit filename="MinGE/Assets/RenderTexture.h" />
+		<Unit filename="MinGE/Assets/Texture.cpp" />
+		<Unit filename="MinGE/Assets/Texture.h" />
+		<Unit filename="MinGE/Components/Animator.cpp" />
+		<Unit filename="MinGE/Components/Animator.h" />
+		<Unit filename="MinGE/Components/AudioListener.cpp" />
+		<Unit filename="MinGE/Components/AudioListener.h" />
+		<Unit filename="MinGE/Components/Box.cpp" />
+		<Unit filename="MinGE/Components/Box.h" />
+		<Unit filename="MinGE/Components/Camera.cpp" />
+		<Unit filename="MinGE/Components/Camera.h" />
+		<Unit filename="MinGE/Components/Collider.cpp" />
+		<Unit filename="MinGE/Components/Collider.h" />
+		<Unit filename="MinGE/Components/Component.cpp" />
+		<Unit filename="MinGE/Components/Component.h" />
+		<Unit filename="MinGE/Components/Cone.cpp" />
+		<Unit filename="MinGE/Components/Cone.h" />
+		<Unit filename="MinGE/Components/Cylinder.cpp" />
+		<Unit filename="MinGE/Components/Cylinder.h" />
+		<Unit filename="MinGE/Components/Graphic.cpp" />
+		<Unit filename="MinGE/Components/Graphic.h" />
+		<Unit filename="MinGE/Components/Light.cpp" />
+		<Unit filename="MinGE/Components/Light.h" />
+		<Unit filename="MinGE/Components/RigidBody.cpp" />
+		<Unit filename="MinGE/Components/RigidBody.h" />
+		<Unit filename="MinGE/Components/Script.cpp" />
+		<Unit filename="MinGE/Components/Script.h" />
+		<Unit filename="MinGE/Components/Skybox.cpp" />
+		<Unit filename="MinGE/Components/Skybox.h" />
+		<Unit filename="MinGE/Components/Sphere.cpp" />
+		<Unit filename="MinGE/Components/Sphere.h" />
+		<Unit filename="MinGE/Components/Transform.cpp" />
+		<Unit filename="MinGE/Components/Transform.h" />
+		<Unit filename="MinGE/Engine.cpp" />
+		<Unit filename="MinGE/Engine.h" />
+		<Unit filename="MinGE/Entity.cpp" />
+		<Unit filename="MinGE/Entity.h" />
+		<Unit filename="MinGE/Meshes/AnimatedModel.cpp" />
+		<Unit filename="MinGE/Meshes/AnimatedModel.h" />
+		<Unit filename="MinGE/Meshes/Model.cpp" />
+		<Unit filename="MinGE/Meshes/Model.h" />
+		<Unit filename="MinGE/Meshes/Terrain.cpp" />
+		<Unit filename="MinGE/Meshes/Terrain.h" />
+		<Unit filename="MinGE/MinGE.h" />
+		<Unit filename="MinGE/Physic/AABB.cpp" />
+		<Unit filename="MinGE/Physic/AABB.h" />
+		<Unit filename="MinGE/Physic/CollisionDetection.cpp" />
+		<Unit filename="MinGE/Physic/CollisionDetection.h" />
+		<Unit filename="MinGE/Physic/Constraint.cpp" />
+		<Unit filename="MinGE/Physic/Constraint.h" />
+		<Unit filename="MinGE/Physic/ContactConstraint.cpp" />
+		<Unit filename="MinGE/Physic/ContactConstraint.h" />
+		<Unit filename="MinGE/Physic/DistanceConstraint.cpp" />
+		<Unit filename="MinGE/Physic/DistanceConstraint.h" />
+		<Unit filename="MinGE/Systems/GraphicEngine.cpp" />
+		<Unit filename="MinGE/Systems/GraphicEngine.h" />
+		<Unit filename="MinGE/Systems/PhysicEngine.cpp" />
+		<Unit filename="MinGE/Systems/PhysicEngine.h" />
+		<Unit filename="MinGE/Systems/ScriptEngine.cpp" />
+		<Unit filename="MinGE/Systems/ScriptEngine.h" />
+		<Unit filename="MinGE/Utility/Debug.cpp" />
+		<Unit filename="MinGE/Utility/Debug.h" />
+		<Unit filename="MinGE/Utility/Input.cpp" />
+		<Unit filename="MinGE/Utility/Input.h" />
+		<Unit filename="MinGE/Utility/Network.cpp" />
+		<Unit filename="MinGE/Utility/Network.h" />
+		<Unit filename="MinGE/Utility/Structs.cpp" />
+		<Unit filename="MinGE/Utility/Structs.h" />
+		<Unit filename="MinGE/Utility/Tag.cpp" />
+		<Unit filename="MinGE/Utility/Tag.h" />
+		<Unit filename="MinGE/Utility/Time.cpp" />
+		<Unit filename="MinGE/Utility/Time.h" />
+		<Unit filename="MinGE/Utility/tinyxml2.cpp" />
+		<Unit filename="MinGE/Utility/tinyxml2.h" />
+		<Unit filename="MinGE/glew.cpp" />
+		<Unit filename="MinGE/includes.cpp" />
+		<Unit filename="MinGE/includes.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
