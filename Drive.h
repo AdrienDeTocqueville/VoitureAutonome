@@ -147,8 +147,7 @@ struct Drive : public Script
         else
         {
             speed = 10.0f;
-            steering = 0.2f*steering + 0.8f*ia->getSteering();
-//            steering = ia->getSteering();
+            steering = ia->getSteering();
         }
 
         if (genData && timer.getElapsedTime().asSeconds() > 0.25f)
